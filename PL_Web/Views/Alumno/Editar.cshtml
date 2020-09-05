@@ -1,0 +1,47 @@
+﻿@model ET.Alumno
+@{
+    ViewBag.Title = "Editar";
+    List<ET.Rol> roles = ViewBag.Roles;
+    List<ET.Grupo> grupos = ViewBag.Grupos;
+}
+
+<h2>Registrar y Editar</h2>
+
+
+@using (Html.BeginForm("guardar", "Alumno", FormMethod.Post))
+{
+<div class="container">
+    @Html.HiddenFor(c => c.id)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Nombre)
+        @Html.TextBoxFor(model => model.Nombre, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Apellido)
+        @Html.TextBoxFor(model => model.Apellido, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Rol)
+        <select name="Rol_id">
+            @foreach (var r in roles)
+            {
+                <option @(r.id == Model.Rol_id ? "selected" : "") value="@r.id">@r.Puesto</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Grupo)
+        <select name="Grupo_id">
+            @foreach (var r in grupos)
+            {
+                <option @(r.id == Model.Grupo_id ? "selected" : "") value="@r.id">@r.Grupos</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <button type="submit">Enviar</button>
+    </div>
+</div>
+}
+

@@ -1,0 +1,36 @@
+﻿@model List<ET.Alumno>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Otros</h2>
+<div style="float:right; margin: 1rem 0rem 1rem 0rem;  ">
+    <a class="btn btn-primary" href="~/Alumno/Editar">Registro nuevo</a>
+</div>
+<div class="container" style="text-align:center;">
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <td>Nombre</td>
+                <td>Apellido</td>
+                <td>Rol</td>
+                <td>Operaciones</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Nombre</td>
+                    <td>@item.Apellido</td>
+                    <td>@item.Rol.Puesto</td>
+                    <td>
+                        <a class="btn btn-warning" href="~/Alumno/editar/@item.id">Editar</a>
+                        <a class="btn btn-danger" onclick="return confirm('¿Esta seguro?');" href="~/Alumno/eliminar/@item.id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,11 @@
+C:\Users\julio\source\repos\4capas\BL\bin\Debug\BL.dll
+C:\Users\julio\source\repos\4capas\BL\bin\Debug\BL.pdb
+C:\Users\julio\source\repos\4capas\BL\bin\Debug\DL.dll
+C:\Users\julio\source\repos\4capas\BL\bin\Debug\ET.dll
+C:\Users\julio\source\repos\4capas\BL\bin\Debug\DL.pdb
+C:\Users\julio\source\repos\4capas\BL\bin\Debug\ET.pdb
+C:\Users\julio\source\repos\4capas\BL\obj\Debug\BL.csprojAssemblyReference.cache
+C:\Users\julio\source\repos\4capas\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\julio\source\repos\4capas\BL\obj\Debug\BL.csproj.CopyComplete
+C:\Users\julio\source\repos\4capas\BL\obj\Debug\BL.dll
+C:\Users\julio\source\repos\4capas\BL\obj\Debug\BL.pdb

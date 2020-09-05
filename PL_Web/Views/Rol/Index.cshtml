@@ -1,0 +1,36 @@
+﻿@model List<ET.Rol>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Roles</h2>
+<div style="float:right; margin: 1rem 0rem 1rem 0rem;  ">
+    <a class="btn btn-primary" href="~/Rol/Editar">Rol nuevo</a>
+</div>
+
+<div class="container" style="text-align:center;">
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <td>id</td>
+                <td>Puesto</td>
+                <td>Operaciones</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.id</td>
+                    <td>@item.Puesto</td>
+                    <td>
+                        <a class="btn btn-warning" href="~/Rol/editar/@item.id">Editar</a>
+                        <a class="btn btn-danger" onclick="return confirm('¿Esta seguro?');" href="~/Rol/eliminar/@item.id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+

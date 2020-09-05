@@ -1,0 +1,36 @@
+﻿@model List<ET.Grupo>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Grupos</h2>
+
+<div style="float:right; margin: 1rem 0rem 1rem 0rem;  ">
+    <a class="btn btn-primary" href="~/Grupo/Editar">Grupo Nuevo</a>
+</div>
+
+<div class="container" style="text-align:center;">
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <td>Grupo</td>
+                <td>Materia</td>
+                <td>Operaciones</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Grupos</td>
+                    <td>@item.Materia</td>
+                    <td>
+                        <a class="btn btn-warning" href="~/Grupo/editar/@item.id">Editar</a>
+                        <a class="btn btn-danger" onclick="return confirm('¿Esta seguro?');" href="~/Grupo/eliminar/@item.id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

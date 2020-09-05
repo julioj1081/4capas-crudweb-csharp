@@ -1,0 +1,25 @@
+﻿@model ET.Grupo
+@{
+    ViewBag.Title = "Editar";
+}
+
+<h2>Registrar y Editar</h2>
+
+@using (Html.BeginForm("guardar", "Grupo", FormMethod.Post))
+{
+    <div class="container">
+        @Html.HiddenFor(c => c.id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Grupos)
+            @Html.TextBoxFor(model => model.Grupos, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Materia)
+            @Html.TextBoxFor(model => model.Materia, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            <button type="submit">Enviar</button>
+        </div>
+    </div>
+}

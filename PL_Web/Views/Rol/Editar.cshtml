@@ -1,0 +1,22 @@
+﻿@model ET.Rol
+@{
+    ViewBag.Title = "Editar";
+}
+
+<h2>Registrar y Editar</h2>
+
+
+@using (Html.BeginForm("guardar", "Rol", FormMethod.Post))
+{
+    <div class="container">
+        @Html.HiddenFor(x => x.id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Puesto)
+            @Html.TextBoxFor(model => model.Puesto, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            <button type="submit">Enviar</button>
+        </div>
+    </div>
+}

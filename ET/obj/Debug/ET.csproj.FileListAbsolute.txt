@@ -1,0 +1,6 @@
+C:\Users\julio\source\repos\4capas\ET\bin\Debug\ET.dll
+C:\Users\julio\source\repos\4capas\ET\bin\Debug\ET.pdb
+C:\Users\julio\source\repos\4capas\ET\obj\Debug\ET.csproj.CoreCompileInputs.cache
+C:\Users\julio\source\repos\4capas\ET\obj\Debug\ET.dll
+C:\Users\julio\source\repos\4capas\ET\obj\Debug\ET.pdb
+C:\Users\julio\source\repos\4capas\ET\obj\Debug\ET.csprojAssemblyReference.cache
